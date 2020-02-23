@@ -34,8 +34,8 @@
 
 <script>
     // Add active class to the current page link
-    let page = window.location.pathname.split("/")[1];
-    //console.log(page);
+    let page = window.location.pathname.split("/").slice(-1);
+    
     let query = document.querySelector(`a[href="${page}"]`);
     query.parentElement.classList.add("active");
     //console.log(query);
