@@ -34,7 +34,7 @@
 
 <script>
     // Add active class to the current page link
-    let page = window.location.pathname.split("/").slice(-1);
+    let page = window.location.pathname.split("/").slice(-1)[0];
     if(!page.includes(".html")) {
         page = "index.html";
     }
