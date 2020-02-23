@@ -1,33 +1,42 @@
 <nav class="navbar navbar-default navbar-dark sticky-top bg-primary navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Finland & Finnish</a>
+        <a class="navbar-brand" href="#">Finnish in a nutshell</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Menu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Welcome</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Finland & Finnish</a>
+                    <a class="nav-link" href="finland.html">Finland & Finnish</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Alphabet & Simple Phrases</a>
+                    <a class="nav-link" href="alphabet.html">Alphabet & Simple Phrases</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Numbers</a>
+                    <a class="nav-link" href="numbers.html">Numbers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Grammar in a nutshell</a>
+                    <a class="nav-link" href="grammar.html">Grammar in a nutshell</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Learn More</a>
+                    <a class="nav-link" href="learnmore.html">Learn More</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<script>
+    // Add active class to the current page link
+    let page = window.location.pathname.split("/")[1];
+    //console.log(page);
+    let query = document.querySelector(`a[href="${page}"]`);
+    query.parentElement.classList.add("active");
+    //console.log(query);
+</script>

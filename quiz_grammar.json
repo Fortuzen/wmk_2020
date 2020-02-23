@@ -1,0 +1,32 @@
+[
+    {
+        "question": "What makes Finnish grammar hard?",
+        "answers": ["Pronunciation", "It's different from other languages", "Weird spelling"],    
+        "correctIndex": 1
+    },
+    {
+        "question": "What is \"We\" in Finnish?",
+        "answers": ["Me", "Te", "Sinä"],    
+        "correctIndex": 0
+    },
+    {
+        "question": "What does \"Tämä\" mean",
+        "answers": ["It", "That", "This"],    
+        "correctIndex": 2
+    },
+    {
+        "question": "What does \"Mikä\" mean",
+        "answers": ["When", "What", "Here"],    
+        "correctIndex": 1
+    },
+    {
+        "question": "What are Finnish verb tenses?",
+        "answers": ["Present, Imperfect, Perfect, Pluperfect", "Present, Imperfect, Perfect, Pluperfect, Future", "Present, Imperfect, Perfect, Passive"],    
+        "correctIndex": 0
+    },
+    {
+        "question": "How many cases Finnish nouns have?",
+        "answers": ["10", "None", "15"],    
+        "correctIndex": 2
+    }     
+]

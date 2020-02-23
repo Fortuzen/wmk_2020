@@ -1,5 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	font-family: "Roboto";
+	background-image: url(res/Koli_2019_1.jpg);
+	background-size: cover;
+	background-repeat: round;
+	background-attachment: fixed;
+}
+
+.container {
+	background-color: rgba(200, 200, 200, 0.65);
+	padding-top: 2em;
+	padding-bottom: 5em;
+	border-radius: 5px;
+}
+
 p {
     text-align: justify;
     margin-left: 1em;
-    margin-right: 1em;
+	margin-right: 1em;
+	line-height: 1.4;
+	font-size: large;
+	font-family: 'Roboto';
+	color: black;
 }
+
+h2 {
+	padding-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+h4 {
+	margin-left: 1.0em;
+}
+
+h6 {
+	margin-left: 3.0em;
+}
+
+#quiz {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.quiz-body {
+    min-height: 15em;
+}
+
+.quiz-header {
+    height: 15vh;
+}
+
+#quiz-question {
+	font-family: "Roboto";
+	font-size: large;
+}
+
+.table-content {
+	max-height: 20em;
+	max-width: 40em;
+	overflow: auto;
+	margin-bottom: 1em;
+}
+
+@media(max-width: 400px) {
+	.table-content {
+		font-size: small;
+	}	
+}
+
+.table-container table {
+	max-width: 50em;
+	overflow: auto;
+}
+@media(max-width: 400px) {
+	.table-container {
+		font-size: small;
+	}	
+}
+
+table {
+	background-color: rgba(200, 200, 200, 0.8);
+}
+
+.figure-caption {
+	color: black;
+}
+
+a {
+	color: rgb(7, 58, 105);
+}
+
+
+

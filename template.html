@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Learn Finnish</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="sticky-top" id="nav-placeholder"></div>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("navbar.html");
+        });
+    </script>
+
+    <div class="container">
+        
+        <h2>Subtitle</h2>
+        <p>
+            Content
+        </p>
+
+        <button class="btn w-50 mx-auto d-block" type="button" data-toggle="modal" data-target="#imageModal">
+            <img src="res/maisema.jpg" class="img-thumbnail" alt="scenery">
+        </button>
+
+        <div class="modal fade" tabindex="-1" id="imageModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="model-content">
+                    <div class="modal-body">
+                        <img src="res/maisema.jpg" class="img-fluid" alt="scenery">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Subtitle 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        
+        <img src="res/maisema.jpg" class="img-fluid">
+        
+
+
+        <h2>Subtitle 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div id="quiz-placeholder" data-file="quiz_test.json"></div>
+        <script>
+            $(function(){
+              $("#quiz-placeholder").load("quiz.html");
+            });
+        </script>
+    </div>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

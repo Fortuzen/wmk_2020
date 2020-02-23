@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Learn Finnish</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="sticky-top" id="nav-placeholder"></div>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("navbar.html");
+        });
+    </script>
+
+    <div class="container">
+        
+        <h2>Alphabet and simple phrases</h2>
+        <p>
+            In this section you will learn about the Finnish alphabet and simple, everyday phrases.
+        </p>
+        
+        <h2>Finnish alphabet</h2>
+        <p>
+            Finnish alphabet consists of 29 letters. Sometimes you can see letters š and ž but those are used in load words rarely.<br>
+        </p>
+
+        <h4>The Alphabet:</h4>
+        <p>
+            A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, Å, Ä, Ö <br>
+            a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, å, ä, ö <br>
+        </p>
+
+        <h4>Pronunciation:</h4>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NYz_rWFlTnM?rel=0" allowfullscreen></iframe>
+        </div>
+        
+        <h2>Simple phrases</h2>
+        <p>
+            Here are some examples on simple, everyday phrases.
+        </p>
+
+        <div class="table-container">
+            <table class="table table-sm mx-auto bg-light rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">English</th>
+                        <th scope="col"> Finnish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hello! My name is Matti.</td>
+                        <td>Hei! Minun nimeni on Matti.</td>
+                    </tr>
+                    <tr>
+                        <td>Good morning! Your name is Liisa.</td>
+                        <td>Hyvää huomenta! Sinun nimesi on Liisa.</td>
+                    </tr>
+                    <tr>
+                        <td>Good afternoon! He is very happy.</td>
+                        <td>Hyvää iltäpäivää. Hän on todella iloinen.</td>
+                    </tr>
+                    <tr>
+                        <td>It is a beautiful day today.</td>
+                        <td>Tänään on kaunis päivä.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quiz-placeholder" data-file="quiz_alphabet_phrases.json"></div>
+        <script>
+            $(function(){
+              $("#quiz-placeholder").load("quiz.html");
+            });
+        </script>
+       
+    </div>
+
+
+
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

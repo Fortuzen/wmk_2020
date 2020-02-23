@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Where is Finland?",
+        "answers": ["Africa", "Northern Europe", "Asia"],    
+        "correctIndex": 1
+    },
+    {
+        "question": "How many Finns are there?",
+        "answers": ["1 Million", "10 Million", "5.5 Million"],    
+        "correctIndex": 2
+    },
+    {
+        "question": "What is the language group of Finnish?",
+        "answers": ["Finno-Ugric", "Romance", "Germanic"],    
+        "correctIndex": 0
+    },
+    {
+        "question": "What language is similar to Finnish?",
+        "answers": ["Russian", "Hungarian", "Estonian"],    
+        "correctIndex": 2
+    }  
+]

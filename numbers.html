@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Learn Finnish</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="sticky-top" id="nav-placeholder"></div>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("navbar.html");
+        });
+    </script>
+
+    <div class="container">
+        
+        <h2>Numbers</h2>
+        <p>
+            In this section, you will learn about Finnish numbers. Note that there is no quiz at the end.
+        </p>
+        
+        <h2>Cardinal numbers</h2>
+        <div class="table-container">
+            <table class="table table-sm mx-auto bg-light rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">English</th>
+                        <th scope="col"> Finnish</th>
+                    </tr>
+                </thead>
+                <tbody id="cardinal-numbers">
+                    <script>
+                        fetch("numbers_cardinal.json")
+                            .then((response) => {
+                                 return response.json();
+                            }).then(data => {
+                                console.log(data);
+                                let tableBody = document.getElementById("cardinal-numbers");
+                                for(let i=0; i<data.length; i++) {
+                                    tableBody.innerHTML += `<tr><th scope="row">${data[i].n}</th><td>${data[i].e}</th><td>${data[i].f}</td></tr>`;
+                                }
+                            });                   
+                    </script>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Ordinal numbers</h2>
+        <div class="table-container">
+            <table class="table table-sm mx-auto bg-light rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">English</th>
+                        <th scope="col"> Finnish</th>
+                    </tr>
+                </thead>
+                <tbody id="ordinal-numbers">
+                    <script>
+                        fetch("numbers_ordinal.json")
+                            .then((response) => {
+                                 return response.json();
+                            }).then(data => {
+                                console.log(data);
+                                let tableBody = document.getElementById("ordinal-numbers");
+                                for(let i=0; i<data.length; i++) {
+                                    tableBody.innerHTML += `<tr><th scope="row">${data[i].n}</th><td>${data[i].e}</th><td>${data[i].f}</td></tr>`;
+                                }
+                            });                   
+                    </script>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

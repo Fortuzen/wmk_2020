@@ -1,0 +1,22 @@
+[
+    {
+        "question": "How many letters there are in the Finnish alphabet?",
+        "answers": ["29", "24", "26"],
+        "correctIndex": 0
+    },
+    {
+        "question": "How is Finnish pronunciation?",
+        "answers": ["Very weird", "As it is written", "Irregular"],    
+        "correctIndex": 1
+    },
+    {
+        "question": "How do you say Hi in Finnish?",
+        "answers": ["Hei", "Iltaa", "Huomenta"],    
+        "correctIndex": 0
+    },
+    {
+        "question": "How do you say Morning in Finnish?",
+        "answers": ["Terve", "Päivää", "Huomenta"],    
+        "correctIndex": 2
+    }
+]

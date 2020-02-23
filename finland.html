@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Learn Finnish</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="sticky-top" id="nav-placeholder"></div>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("navbar.html");
+        });
+    </script>
+
+    <div class="container">
+        
+        <h2>Finland</h2>
+        <p>
+            Finland is a country in Northern Europe with around 5.5 million inhabitants. 
+            Its neigbours are Sweden, Norway, Estonia and Russia.
+            Finland’s capital and the largest city is Helsinki which is located in Southern Finland, on the shore of the Gulf of Finland.
+            Finland was part of Sweden and Russian in the past but gained independence in 1917.  
+        </p>
+        
+        <img src="res/finland_map.jpg" class="img-fluid mx-auto d-block" style="height: 70vh;">
+        
+        <h2>Finnish</h2>
+        <p>
+            Finnish is a Finno-Ugric language that is mostly spoken inside of Finland and a very little in neighbouring countries.
+            Finnish has a few close relatives, the largest being Estonian after Finnish.
+            They are similar languages but are not mutually intelligible because, for example, same words can have different meanings.
+        </p>
+
+        <figure class="figure">
+            <button class="btn w-50 mx-auto d-block" type="button" data-toggle="modal" data-target="#imageModal">
+                <img src="res/UralicTree.png" class="figure-img img-fluid rounded" alt="scenery">
+                <figcaption class="figure-caption">Uralic language tree. Click to enlarge the image.</figcaption>
+            </button>
+        </figure>
+
+        <div class="modal fade" tabindex="-1" id="imageModal">
+            <div class="modal-dialog modal-dialog-centered modal-xl">       
+                <img src="res/UralicTree.png" class="img-fluid" alt="Language tree">                 
+            </div>
+        </div>  
+
+        <div id="quiz-placeholder" data-file="quiz_finland.json"></div>
+        <script>
+            $(function(){
+              $("#quiz-placeholder").load("quiz.html");
+            });
+        </script>
+        <script>
+            
+        </script>        
+
+
+    </div>
+
+
+
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
