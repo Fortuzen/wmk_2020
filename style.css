@@ -3,7 +3,7 @@
 body {
 	font-family: "Roboto";
 	background-image: url(res/Koli_2019_1.jpg);
-	background-size: cover;
+	background-size: 100vw 100vh;
 	background-repeat: round;
 	background-attachment: fixed;
 }
